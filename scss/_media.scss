@@ -144,9 +144,6 @@
       left: 50%;
     }
   }
-  .contact-a {
-    margin: 0.5rem;
-  }
   .home {
     &-a {
       .section-starter {
@@ -228,6 +225,21 @@
       &:nth-child(1) {
         padding-right: 1rem;
       }
+    }
+  }
+  .contact-a {
+    form {
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+      .text-fields {
+        .text-input {
+          // margin: 0;
+        }
+      }
+    }
+    button[type="submit"] {
+      margin-top: 0;
     }
   }
 }

@@ -529,8 +529,6 @@ footer {
     .items .item:last-child {
       position: relative;
       left: 50%; }
-  .contact-a {
-    margin: 0.5rem; }
   .home-a .section-starter {
     margin-top: 1.4rem; }
   .home-a .cards {
@@ -573,4 +571,10 @@ footer {
   .contact-b .farcry {
     padding: 0 0.2rem 0 0; }
     .contact-b .farcry:nth-child(1) {
-      padding-right: 1rem; } }
+      padding-right: 1rem; }
+  .contact-a form {
+    overflow: hidden;
+    padding: 0;
+    margin: 0; }
+  .contact-a button[type="submit"] {
+    margin-top: 0; } }
