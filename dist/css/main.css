@@ -472,9 +472,6 @@ footer {
     width: 150px;
     padding: 0; } }
 
-.contact-a {
-  margin: 1rem; }
-
 @media (max-width: 500px) {
   .header-home {
     height: 25vh; }
@@ -563,18 +560,18 @@ footer {
       height: 30px; }
       footer .plus ul li a .fab {
         font-size: 1.4rem; }
-  .contact-a .text-fields .text-input {
-    margin: 0;
-    width: 150px; }
-  .contact-b-form {
+  .contact-a form .text-fields {
+    grid-template-areas: "name name" "email email" "subject subject" "number number" "massage massage";
+    grid-gap: 1rem; }
+    .contact-a form .text-fields .text-input {
+      margin: 0;
+      width: 300px;
+      margin: 0 auto; }
+  .contact-a form button[type="submit"] {
+    margin-top: 0; }
+  .contact-a .contact-b-form {
     padding: 1rem; }
-  .contact-b .farcry {
+  .contact-a .contact-b .farcry {
     padding: 0 0.2rem 0 0; }
-    .contact-b .farcry:nth-child(1) {
-      padding-right: 1rem; }
-  .contact-a form {
-    overflow: hidden;
-    padding: 0;
-    margin: 0; }
-  .contact-a button[type="submit"] {
-    margin-top: 0; } }
+    .contact-a .contact-b .farcry:nth-child(1) {
+      padding-right: 1rem; } }

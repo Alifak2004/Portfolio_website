@@ -52,9 +52,6 @@
     }
   }
 }
-.contact-a {
-  margin: 1rem;
-}
 
 @media (max-width: 500px) {
   .header-home {
@@ -208,38 +205,36 @@
     }
   }
   .contact-a {
-    .text-fields {
-      .text-input {
-        margin: 0;
-        width: 150px;
-      }
-    }
-  }
-  .contact-b {
-    &-form {
-      padding: 1rem;
-    }
-    .farcry {
-      padding: 0 0.2rem 0 0;
-
-      &:nth-child(1) {
-        padding-right: 1rem;
-      }
-    }
-  }
-  .contact-a {
     form {
-      overflow: hidden;
-      padding: 0;
-      margin: 0;
       .text-fields {
+        grid-template-areas:
+          "name name"
+          "email email"
+          "subject subject"
+          "number number"
+          "massage massage";
+        grid-gap: 1rem;
         .text-input {
-          // margin: 0;
+          margin: 0;
+          width: 300px;
+          margin: 0 auto;
         }
       }
+      button[type="submit"] {
+        margin-top: 0;
+      }
     }
-    button[type="submit"] {
-      margin-top: 0;
+    .contact-b {
+      &-form {
+        padding: 1rem;
+      }
+      .farcry {
+        padding: 0 0.2rem 0 0;
+
+        &:nth-child(1) {
+          padding-right: 1rem;
+        }
+      }
     }
   }
 }
